@@ -1,0 +1,9 @@
+[Unit]
+Description=Loads default OpenRGB profile on login
+
+[Service]
+Environment="XDG_CONFIG_HOME=/home/alichtman/.config"
+ExecStart=/usr/local/bin/openrgb-on-freedesktop-login.sh
+
+[Install]
+WantedBy=multi-user.target
